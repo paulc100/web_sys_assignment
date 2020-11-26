@@ -1,7 +1,7 @@
 {
-  "name": "week5",
+  "name": "week11",
   "version": "1.0.0",
-  "description": "3695 Week5 MongoDB Implementation",
+  "description": "3695 Week11",
   "main": "index.js",
   "type": "module",
   "scripts": {

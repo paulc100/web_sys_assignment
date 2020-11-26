@@ -19,6 +19,10 @@ export const resolvers = {
       await note.save();
       return note;
     },
+    deleteNote: async (_, { id }) => {
+      const note = await Note.findByIdAndRemove(id);
+        return note;
+    },
     updateNote: async (_, { id, image }) => { 
       const note = await Note.findByIdAndUpdate(id, { image: `${await cloudinary.uploader.upload(image)}` });
       if (image !== null) {

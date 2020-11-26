@@ -22,6 +22,7 @@ export const typeDefs = gql`
 
   type Mutation {
     createNote(title: String!, description: String!, image: String): Note!
+    deleteNote(id: ID!): Note!
     updateNote(id: ID!, image: String): Note!
   }
 `;
